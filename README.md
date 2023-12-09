@@ -24,6 +24,7 @@ make qemu-nox
 To exit QEMU, tap control + a, release, then tap x.
 
 
+### Original README
 NOTE: we have stopped maintaining the x86 version of xv6, and switched
 our efforts to the RISC-V version
 (https://github.com/mit-pdos/xv6-riscv.git)
