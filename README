@@ -1,3 +1,29 @@
+# xv6 x86  
+This is a copy of xv6 written for the x86 platform. It is not maintained
+anymore, but I wanted to play around with the xv6 kernel on an x86 Mac(I
+know, dinosaurs). I have added a `Dockerfile` to the repo. Build this
+like you'd build any docker container.
+
+### Build and Run
+Build docker container
+```
+docker build -t xv6 .
+```
+Get into the container
+```
+docker run --rm -it -v $PWD:/xv6-public xv6
+```
+Build the OS image
+```
+make
+```
+Run QEMU without graphics
+```
+make qemu-nox
+```
+To exit QEMU, tap control + a, release, then tap x.
+
+
 NOTE: we have stopped maintaining the x86 version of xv6, and switched
 our efforts to the RISC-V version
 (https://github.com/mit-pdos/xv6-riscv.git)
